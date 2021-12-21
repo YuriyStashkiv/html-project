@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <header>
+    <h1>Інформація для заповнення</h1>
+    </header>
+    <nav>
+        <a href="index.html">"Флоріо"</a>
+    </nav>
+    <main>
+		<form action="https://formspree.io/f/xrgjgwer" method="POST">
+			<label>Ім'я:
+                <input type="text" placeholder="Ім'я" required name="Ім'я">
+            </label>
+			<br>
+			<label>
+                Email:
+                <input type="text" placeholder="Email" required name="Email">
+            </label>
+			<br>
+			<label>
+                Телефон:
+                <input type="text" placeholder="Телефон" required name="Телефон">
+            </label>
+			<br>
+			<label>
+                Коментар:
+                <input type="text" placeholder="Коментар" required name="Коментар">
+            </label>
+			<br>
+                Стать
+			<label>
+                <input type="radio" name="gender" value="male"> Чоловіча
+            </label>
+			<label>
+                <input type="radio" name="gender" value="female"> Жіноча
+            </label>
+			<label>
+                <input type="radio" name="gender" value="others"> Інше
+            </label>
+			<br>
+			<input type="submit" value="відправити">
+        </form>
+	</main> 
+</body>
+</html>
