@@ -4,6 +4,7 @@
     --main-color: black;
     --accent-color: white;
     font-family: 'Mukta', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,15 +14,17 @@ body {
 
 header .logo {
     font-family: 'Krona One', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-header .menu {
+header .menu-items {
     flex: 1;
+    justify-content: space-around;
+    display: none;
 }
 
-header .menu a {
+header .menu-items a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -30,28 +33,42 @@ header .menu a {
     padding: 5px;
 }
 
-header .menu a:hover {
+header .menu-items a:hover {
     border: 1px solid var(--main-color);
 }
 
+/* burger menu */
+
+#burger-checkbox {
+    display: none;
+}
+
+.header-nav input:checked ~ .menu-items {
+    display: block;
+}
+
 header .header-banner h1 {
-    text-align: left;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
     
-    header .header-nav {
-    display: flex;
+    .burger-icon {
+        display: none;
     }
 
-    header .menu {
-    display: flex;
-    align-items: center;
+    header .header-nav {
+        display: flex;
+    }
+
+    header #burger-checkbox ~ .menu-items {
+        display: flex;
+        align-items: center;
     }
 
 }
 
-header .header-nav {
+header .header-banner {
     background-image: url(../img/ballerina.jpeg);
     background-size: cover;
     min-height: 450px;
@@ -70,6 +87,13 @@ header .header-banner h1 {
 .main-content img {
     width: 100%;
 }
+
+.main-content .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 /* Controls */
 
