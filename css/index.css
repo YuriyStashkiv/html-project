@@ -141,3 +141,27 @@ header .header-banner h1 {
     background-color: black;
     color: white;
 }
+
+.banner {
+    text-align: center;
+}
+
+.achievement {
+    text-align: left;
+    background-color: #e528ac;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.dancing {
+    text-align: center;
+}
+
+.trail-lesson {
+    text-align: center;
+    background-color: #e528ac; 
+}
